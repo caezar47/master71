@@ -1,0 +1,56 @@
+<main class="{{content_prefix}}panel">
+	<div class="{{content_prefix}}bg  {{content_mod}}" style="background-image: url({{content_bg}})"></div> 
+	<div class="{{content_prefix}}container container  is--full">
+		[[azbntple 
+			tpl="/src/block/site/default/page-header/panel.html"
+			block_prefix="page-header__" 
+			block_mod="{{block_heading_mod}}"
+			block_heading_level="{{block_heading_level}}"
+			block_heading="{{block_heading}}"
+			block_bread_mod="{{block_bread_mod}}"
+		]]		
+		<div class="{{content_prefix}}elem  {{content_mod}}">		
+			<div class="{{content_prefix}}row row  is--gutter  is--wrap  {{content_mod}}">
+				<div class="{{content_prefix}}cols cols  is--services  is--aside">	
+					[[azbntple 
+						tpl="/src/block/site/default/navbar/aside.html"
+						block_prefix="navbar-aside__"
+					]] 
+
+					[[azbntple 
+						tpl="/src/block/site/default/button/link-icon-name.html"
+						button_prefix="btn-icon__" 
+						button_mod="is--calc"
+						button_attr="  " 
+						button_link="##"
+						button_name="Рассчитать стоимость" 
+						button_icon="icon-calc"
+					]]
+				</div>
+				<div class="{{content_prefix}}cols cols  is--services  is--content">
+					<div class="{{content_prefix}}elem  text__block">
+						<p>Профессиональная строительная компания «ТулаСтройГарант» предлагает предприятиям и организациям различной сферы деятельности и формы собственности, государственным учреждениям и частным лицам комплекс квалифицированных инжиниринговых, монтажных и отделочных услуг на объектах любого уровня сложности.</p>
+					</div>
+					<div class="{{content_prefix}}elem">
+						<h6 class="{{content_prefix}}heading">Основные направления деятельности компании «ТулаСтройГарант»:</h6>
+						[[azbntple 
+							tpl="/src/block/site/default/header/panel-services.html"
+							block_prefix="header-block__"
+							block_mod="is--second"
+						]]
+					</div>
+					<div class="{{content_prefix}}elem  text__block">
+						<h3>Дополнительные услуги:</h3>
+						<p>Кроме профильных услуг, компания «ТулаСтройГарант» предоставляет своим Заказчикам и потенциальным клиентам:</p>
+						<ul>
+							<li>профессиональные консультации,</li>
+							<li>авторский и технический надзор за качеством выполнения работ,</li>
+							<li>подбор и поставку качественных материалов,</li>
+							<li>транспортные услуги по доставке грузов на объекты и выполнение погрузочно-разгрузочных работ.</li>
+						</ul>    
+					</div>	
+				</div>	
+			</div>
+		</div>		
+	</div>
+</main>

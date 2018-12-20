@@ -1,0 +1,31 @@
+<footer class="{{footer_prefix}}block">	
+	<div class="{{footer_prefix}}inner  is--top" style="background-image: url({{footer_bg}})">
+		<div class="{{footer_prefix}}container container">
+			<div class="{{footer_prefix}}row row  is--gutter  is--aic  is--jcsb">
+				<div class="{{footer_prefix}}cols cols  is--logotip">
+					<a href="{{page.index}}" class="{{footer_prefix}}logotip">
+						<img src="{{url-path-img}}/temp/logotip.png" alt="" class="img-responsive">
+					</a>				
+				</div>
+				<div class="{{footer_prefix}}cols cols  is--contacts">
+					[[azbntple 
+						tpl="/src/block/site/default/continfo/panel-header.html" 
+						block_prefix="continfo__" 
+						block_mod="is--footer" 
+					]]
+				</div>
+			</div>
+		</div>
+	</div>	
+	<div class="{{footer_prefix}}inner  is--bottom">	
+		<div class="{{footer_prefix}}container container">
+			<div class="{{footer_prefix}}row row  is--base">
+				<div class="{{footer_prefix}}cols cols  is--copyright">
+					<div class="{{footer_prefix}}copyright">
+						&copy; 2019 {{contacts.copyright}}
+					</div>
+				</div>
+			</div>	
+		</div>
+	</div>
+</footer>

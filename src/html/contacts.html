@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ru-RU"> 
+	<head>
+		[[azbntple 
+			tpl="/src/block/site/default/head/.html" 
+			title=" "
+			description=" "
+		]] 		
+	</head>
+	<body> 
+		[[azbntple 
+			tpl="/src/block/site/default/navbar/navbar.html"
+			navbar_prefix="navbar__"
+			navbar_mod="is--scroll"
+		]] 
+		[[azbntple 
+			tpl="/src/block/site/default/header/panel.html"
+			block_prefix="header-block__"
+			block_mod="is--second"
+			block_heading="Cтроительство, отделка и инженерного оснащения объектов"
+			block_bg="{{url-path-img}}/temp/bg-index-header.jpg"
+		]]  
+		[[azbntple  
+			tpl="/src/block/site/page/contacts.html"
+			content_prefix="content-block__"       
+			content_mod="  "    
+			content_bg="{{url-path-img}}/temp/bg-second.png"
+			block_heading_mod="is--h1  is--center-screen"
+			block_heading_level="h1"
+			block_heading="Контакты"  
+			block_bread_mod="is--center"  
+		]]
+		[[azbntple 
+			tpl="/src/block/site/default/footer/footer.html"
+			footer_prefix="footer__" 
+			footer_bg="{{url-path-img}}/temp/bg-index-adv.png"
+		]]
+		[[azbntple tpl="/src/block/site/default/modals/include.html" ]]
+		[[azbntple tpl="/src/block/site/default/script/2gisMap.html" ]]
+		[[azbntple tpl="/src/block/site/default/script/script.html" ]]
+	</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ru-RU"> 
+	<head>
+		[[azbntple 
+			tpl="/src/block/site/default/head/.html" 
+			title=" "
+			description=" "
+		]] 		
+	</head>
+	<body> 
+		[[azbntple 
+			tpl="/src/block/site/default/navbar/navbar.html"
+			navbar_prefix="navbar__"
+			navbar_mod="is--scroll"
+		]] 
+		[[azbntple 
+			tpl="/src/block/site/default/header/panel-index.html"
+			block_prefix="header-block__"
+			block_mod="  "
+			block_heading="Cтроительство, отделка и инженерного оснащения объектов"
+			block_bg="{{url-path-img}}/temp/bg-index-header.jpg"
+			block_wow="wow fadeInDown"
+		]]	
+		[[azbntple  
+			tpl="/src/block/site/page/index-about.html"
+			content_prefix="content-block__"  
+			content_mod="is--about-index"
+			content_bg="{{url-path-img}}/temp/bg-index-about.png"
+			block_heading_mod="is--h1  is--center"
+			block_heading_level="h2"
+			block_heading="О компании"
+		]]	
+		[[azbntple  
+			tpl="/src/block/site/page/index-adv.html"
+			content_prefix="content-block__"
+			content_mod="is--adv-index"
+			content_bg="{{url-path-img}}/temp/bg-index-adv.png"
+			block_heading_mod="is--h1  is--center  is--white"
+			block_heading_level="h2"
+			block_heading="Преимущества компании"ащения объектов"
+			block_bg="{{url-path-img}}/temp/bg-index-header.jpg"
+			block_wow="wow fadeInLeft"
+		]]
+		[[azbntple  
+			tpl="/src/block/site/page/index-objacts.html"
+			content_prefix="content-block__"   
+			content_mod="is--objacts-index"
+			content_bg="{{url-path-img}}/temp/bg-index-objacts.png"
+			block_heading_mod="is--h1  is--center"
+			block_heading_level="h2"
+			block_heading="Наши объекты"
+			block_wow="wow fadeInDown"
+		]]	
+		[[azbntple  
+			tpl="/src/block/site/page/index-partners.html"
+			content_prefix="content-block__"   
+			content_mod="is--partners-index"
+			block_heading_mod="is--h1  is--center"
+			block_heading_level="h2"
+			block_heading="Наши заказчики"
+			block_wow="wow fadeInLeft"
+		]]	
+		[[azbntple  
+			tpl="/src/block/site/page/index-certificates.html"
+			content_prefix="content-block__"   
+			content_mod="is--certificates-index"
+			block_heading_mod="is--h1  is--center"
+			block_heading_level="h2"
+			block_heading="Сертификаты"
+			block_wow="wow fadeInRight"
+		]]	
+		[[azbntple 
+			tpl="/src/block/site/default/footer/footer.html"
+			footer_prefix="footer__" 
+			footer_bg="{{url-path-img}}/temp/bg-index-adv.png"
+		]]
+		[[azbntple tpl="/src/block/site/default/modals/include.html" ]]
+		[[azbntple tpl="/src/block/site/default/script/script.html" ]]
+		<script>new WOW().init(); </script>
+	</body>
+</html>

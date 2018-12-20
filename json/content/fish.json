@@ -1,0 +1,48 @@
+{
+	"contacts":{
+		"name":"Тульский мастер",
+		"domain":"domain.domain",
+		"domain_link":"http://domain.domain/",
+		"color":"#F24F00",
+		"agreement_page":"agreement",
+		"copyright":"Тульский мастер",
+		"email":"email@email.ru",
+		"phone":"+7 (012) 345-67-89",  
+		"phone_tel":"+70123456789",   
+		"clock":"<p>Пн-Пт: 07:00-16:00</p><p>Сб-Вс: выходной</p>",  
+		"address":"г. Орёл, Сквер им. Сталина",
+		"map_center_coord":"[52.97067, 36.084622]",
+		"map_zoom":"17",
+		"map_point_coord":"[52.97067, 36.084622]",
+		"map_point_heading":"Мы здесь!"
+	},
+	"soc":{
+		"vk":"https://vk.com/",
+		"fb":"https://www.facebook.com/",
+		"ok":"https://ok.ru/group/",
+		"tw":"https://twitter.com/",
+		"inst":"https://www.instagram.com/"
+	},
+	"page":{
+		"index":"/master71/",
+		"services":"/master71/services.html",
+		"objacts":"/master71/objacts.html",
+		"reviews":"/master71/reviews.html",
+		"contacts":"/master71/contacts.html",
+		"sitemap":"/master71/sitemap.html",
+		"style":"/master71/style.html"
+	},	  
+	"prefix":{
+		"navbar":"navbar__",
+		"footer":"footer__",
+		"main":"content-block__",
+		"form":"form__",
+		"card":"card__"
+	},                       
+	"url-path-css":"/master71/css",
+	"url-path-img":"/master71/img",
+	"url-path-js":"/master71/js",
+	"url-path-plugins":"/master71/plugins",
+	"url-path-favicon":"/master71/favicon",
+	"url-path-docs":"/master71/docs"
+}

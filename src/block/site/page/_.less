@@ -1,0 +1,238 @@
+.content-block__{
+	&panel{	 
+		position: relative;
+		overflow: hidden;
+		//index page
+		&.is--about-index{
+		}
+		&.is--adv-index{
+			background-color: @success;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;			
+		}
+	}
+	&bg{
+		position: absolute;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		filter: grayscale(1);
+		background-repeat: no-repeat; 
+		background-position: top center;
+		background-size: contain;
+		&.is--about-index{
+			background-position: center;
+			background-size: cover;
+		}
+		&.is--objacts-index{
+			background-position: center;
+			background-size: cover;
+		}		
+	}
+	&container{	
+		position: relative;
+		z-index: 5;
+		@media print{padding: 0!important}		
+		padding-top: 40px;
+		padding-bottom: 40px;
+		@media @media-point-screen {
+			padding-top: 2vw;
+			padding-bottom: 5.2vw;
+		}
+		&.is--full{
+			@media @media-point-smart {
+				min-height: ~"calc(100vh - @{navbar_xs})";
+			}
+			@media @media-point-sm {
+				min-height: ~"calc(100vh - @{navbar_sm} - @{footer_device_sm_p})";
+			}
+			@media @media-point-md1 {
+				min-height: ~"calc(100vh - @{navbar_sm} - @{footer_device_sm_l})";
+			}
+			@media @media-point-screen {					
+				min-height: ~"calc(100vh - @{navbar_screen} -  @{footer_screen})";
+			}
+			@media @media-point-md2 {
+				min-height: ~"calc(100vh - @{navbar_md} - @{footer_screen_md})";
+			}
+			@media @media-point-lg {
+				min-height: ~"calc(100vh - @{navbar_lg} - @{footer_screen_lg} )"; 
+			}
+			@media @media-point-xxl {
+				min-height: ~"calc(100vh - @{navbar_xxl} -  @{footer_screen_xxl})"; 
+			}			
+			body.is--navbar_bottom &{
+				@media @media-point-sm {
+					min-height: ~"calc(100vh - @{navbar_sm} - @{footer_device_sm_p} - @{navbar_bottom})";
+				}
+				@media @media-point-md1 {
+					min-height: ~"calc(100vh - @{navbar_sm} - @{footer_device_sm_l} -  @{navbar_bottom})";
+				}
+				@media @media-point-md2 {	
+					min-height: ~"calc(100vh - @{navbar_md} - @{footer_screen_md} - @{navbar_bottom_tabs} - @{navbar_bottom})"; 
+				}
+			}
+		}
+		&.is--p0{
+			padding-top: 0;
+			padding-bottom: 0;
+			min-height: inherit;
+		}
+		&.is--pt0{
+			padding-top: 0;
+		}
+		&.is--pb0{
+			padding-bottom: 0;
+		}
+		&.is--overflow{
+			overflow: hidden;
+			position: relative;
+		}
+		//index page
+		&.is--about-index{
+			@media @media-point-screen-lg {
+				padding-top: 4.9vw;
+				padding-bottom: 4.9vw;
+			}
+		}
+		&.is--adv-index{
+			@media @media-point-screen-lg {
+				padding-top: 2.3vw;
+				padding-bottom: 3.5vw;
+			}			
+		}
+		&.is--objacts-index{
+			@media @media-point-screen-lg {
+				padding-top: 2.1vw;
+				padding-bottom: 2.5vw;
+			}			
+		}
+		&.is--partners-index{
+			@media @media-point-screen-lg {
+				padding-top: 2.7vw;
+				padding-bottom: 2.7vw;
+			}			
+		}
+		&.is--certificates-index{
+			@media @media-point-screen-lg {
+				padding-top: 3.5vw;
+				padding-bottom: 4.2vw;
+			}			
+		}
+		&.is--index{}
+		//pages
+	}
+	&elem{
+		margin-bottom: 35px;
+		@media @media-point-screen { margin-bottom: 2.5vw; }
+		&.is--xs{
+			margin-bottom: 20px;			
+		}
+		&.is--sm{
+			margin-bottom: 25px;
+			@media @media-point-screen { margin-bottom: 2.5vw; }
+		}
+		&.is--lg{
+			margin-bottom: 30px;
+			@media @media-point-screen { margin-bottom: 3vw;}
+		}
+
+		&.is--posr{
+			position: relative;
+		}
+		&.is--hidden{
+			overflow: hidden;
+		}
+		&.is--center{
+			text-align: center;
+		}
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+	&row{
+	}		  
+	&cols{
+		//page
+		&.is--services{
+			&.is--aside{
+				@media @media-point-device-lg {
+					order: 1;
+				}
+				@media @media-point-screen-lg {
+					.makeCols(3.5, 12);
+				}
+			}
+			&.is--content{
+				.makeCols(12, 12);
+				@media @media-point-screen-lg {
+					.makeCols(8.09, 12);
+					margin-left: auto;
+				}
+			}
+		}
+	}
+	&heading{
+		h2&{
+			margin-bottom: 30px;
+			@media @media-point-screen {
+				margin-bottom: 2.2vw;
+			}			
+		}
+		h3&{
+			margin-bottom: 25px;
+			@media @media-point-screen {
+				margin-bottom: 1.8vw;
+			}			
+		}
+		h4&{
+			margin-bottom: 20px;
+			@media @media-point-screen {
+				margin-bottom: 1.4vw;
+			}
+		}
+		h5&{
+			font-weight: 600;
+			margin-bottom: 15px;
+			@media @media-point-screen {
+				margin-bottom: 1vw;
+			}
+		}
+		h6&{
+			font-weight: 600;
+			margin-bottom: 20px;
+		}
+		&.is--center{
+			text-align: center;
+		}
+	}
+	&text{
+		&.is--center{
+			text-align: center;
+		}
+	}
+	&preview{
+	}
+	&slick{
+	}
+	&slick-item{
+		&.is--gallery{
+			padding: 0 15px;
+		}
+	}
+	&btn{
+		padding-top: 35px;
+		&.is--pt0{
+			padding-top: 0;
+		}
+		&.is--center{
+			text-align: center;
+		} 
+		//page
+	}
+	&item{
+	}
+}

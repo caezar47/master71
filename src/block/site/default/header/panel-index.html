@@ -1,0 +1,26 @@
+<header class="{{block_prefix}}block"  style="background-image: url({{block_bg}});">
+	<div class="container {{block_prefix}}container">
+		<div class="{{block_prefix}}row row  is--gutter  is--aic">
+			<div class="{{block_prefix}}cols cols  is--logotip">
+				<a href="{{page.index}}" class="{{block_prefix}}logotip">
+					<img src="{{url-path-img}}/temp/logotip.png" alt="" class="img-responsive">
+				</a>				
+			</div>
+			<div class="{{block_prefix}}cols cols  is--contacts">
+				[[azbntple 
+					tpl="/src/block/site/default/continfo/panel-header.html" 
+					block_prefix="continfo__" 
+					block_mod="is--header" 
+				]]
+			</div>
+			<div class="{{block_prefix}}cols cols  is--heading">
+				<h1 class="{{block_prefix}}heading">{{block_heading}}</h1>
+			</div>
+		</div>
+		[[azbntple 
+			tpl="/src/block/site/default/header/panel-services.html"
+			block_prefix="header-block__"
+			block_mod="is--index" 
+		]]
+	</div>
+</header>
