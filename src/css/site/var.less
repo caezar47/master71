@@ -33,10 +33,6 @@
 //= default
 @white 						:	#fff;
 @black 						: 	#000;
-@black-33 					: 	#333;
-@black-b5 					: 	#B5B5BD;
-@orange 					:	#F24F00;
-@yellow 					:	#FF8E26;
 
 @black-1d 					: 	#1d1d1d;
 @black-b0 					: 	#b0b1af;
@@ -45,11 +41,12 @@
 @red-d8						: 	#d84446;
 @green 						: 	#5fa55a;
 @green-49 					: 	#499443;
+
 @default 					:	@black-1d;			
-//@warning 					:	@yellow;			
 @success 					:	@green;			
-//@info 						:	@blue;			
 @danger 					:	@red;	
+//@warning 					:	@yellow;			
+//@info 						:	@blue;			
 //===== fonts =====//
 @sourcesans 				:	sourcesans-400;
 @sourcesans-300 			:	sourcesans-300;
@@ -59,8 +56,8 @@
 @b-color 					:	@default; 
 @b-color-a 					:	@danger; 
 @b-color-a-hover 			:	@success; 
-@b-color-h 					:	@black-33; 
-@b-block-bg 				:	@black-b5;
+@b-color-h 					:	@b-color; 
+@b-block-bg 				:	fadeout(@black-b0, 50%);
 
 @b-html-bg 					:	@white; 
 @b-body-bg 					:	@white; 
@@ -196,31 +193,31 @@
 
 //===== form  =====//
 //=== input ===
-@input_label				: 	@black;
+@input_label				: 	@b-color;
 @input_bg					:	@white;
 @input_height				:	50px;
 @input_height_textarea		:	145px;
 @input_radius				:	0px;
-@input_border_color			:	@b-color-a-hover;
+@input_border_color			:	@danger;
 @input_border_width			:	2px;
 
 //= focus =
 @input_focus_bg				:	@white;
-@input_focus_border_color	:	@b-color-a;
+@input_focus_border_color	:	@success;
 
 //== input text ==
-@input_t_color				:	@b-color-h;
+@input_t_color				:	@danger;
 @input_t_fs					:	@b-fs;
 @input_t_lh					:	@b-lh;
 //= focus =
-@input_focus_t_color		:	@b-color-h;
+@input_focus_t_color		:	@success;
 
 //== placeholder ==
-@input_plh_color			:	@b-color-a-hover;
+@input_plh_color			:	@danger;
 @input_plh_fs				:	@b-fs;
 @input_plh_lh				:	@b-lh;
 //= focus =
-@input_focus_plh_color		:	@b-color;
+@input_focus_plh_color		:	@success;
 
 //== white ==
 @input_w_bg					:	fadeout(@white, 100%);
@@ -247,9 +244,9 @@
 
 //=== radio ===
 @radio_gutter 				: 	4px;
-@radio_bg 					: 	@b-color-a;
-@radio_bg_hover 			: 	@b-color-a-hover;
-@radio_bg_active 			: 	@b-color;
+@radio_bg 					: 	@danger;
+@radio_bg_hover 			: 	@success;
+@radio_bg_active 			: 	@success; 
 
 //=== error ===
 @form_error_bg 				: 	@b-color-a;
@@ -303,8 +300,8 @@
 @table_bg_colspan 			:	@white;
 @table_padding 				:	10px 12px;
 
-@table_head_color 			:	@b-color;
-@table_head_bg 				:	@b-block-bg;
+@table_head_color 			:	@white;
+@table_head_bg 				:	@success;
 @table_head_padding 		:	12px;
 @table_head_border_color 	:	@b-block-bg;
 //===== end's table =====//

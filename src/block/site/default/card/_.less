@@ -53,37 +53,6 @@
 	}
 	&row{}
 	&cols{}
-	&bg{
-		transition: @trs-site;		
-		position: absolute;
-		z-index: 5;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		opacity: 0;
-		display: flex;
-		align-items: center;
-		padding: 20px;
-		background-color: fadeout(@b-color-a-hover, 10%);
-		@media @media-point-screen {
-			padding: 2.5vw;
-		}
-		.card-item__card:hover &,
-		.card-item__card.is--active &{
-			opacity: 1;
-		}
-	}
-	&view{		
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		width: 44px;
-		height: 44px;
-		color: @white;
-		svg{display: block;}
-	}
 	&preview{
 		display: block;
 		position: relative;
@@ -175,16 +144,6 @@
 				&::before{
 					width: 100%;
 				}
-			}
-		}
-		//old
-		&.is--reviews{
-			display: flex;
-			align-items: center;
-			justify-content: space-between;
-			margin-bottom: 20px;
-			@media @media-point-smart {
-				flex-wrap: wrap;
 			}
 		}
 	}
@@ -289,14 +248,6 @@
 	&heading-small{
 		transition: @trs-site;		
 	}	
-	&line{
-		flex-grow: 1;
-		margin: 0 15px;
-		border-bottom: 2px dotted @b-block-bg;
-		@media @media-point-xxs {
-			display: none;
-		}
-	}
 	&date{	
 		display: block;
 		transition: @trs-site;
@@ -310,9 +261,7 @@
 		}
 		&.is--reviews{
 			font-size: @b-fs - 2;
-			line-height: @b-lh - 2;
-			
-			
+			line-height: @b-lh - 2;			
 		}
 	}
 	&btn{}

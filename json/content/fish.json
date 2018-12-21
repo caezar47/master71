@@ -3,7 +3,7 @@
 		"name":"Тульский мастер",
 		"domain":"domain.domain",
 		"domain_link":"http://domain.domain/",
-		"color":"#F24F00",
+		"color":"#fa5457",
 		"agreement_page":"agreement",
 		"copyright":"Тульский мастер",
 		"email":"email@email.ru",
@@ -29,6 +29,7 @@
 		"objacts":"/master71/objacts.html",
 		"reviews":"/master71/reviews.html",
 		"contacts":"/master71/contacts.html",
+		"404":"/master71/404.html",
 		"sitemap":"/master71/sitemap.html",
 		"style":"/master71/style.html"
 	},	  

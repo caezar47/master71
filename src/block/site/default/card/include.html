@@ -1,110 +1,35 @@
 <h4 class="{{block_prefix}}heading">{{block_heading}}</h4>
 <div style="margin-bottom: 100px;">
 	<h5 class="{{block_prefix}}heading">Карточки услуг</h5>
-	<div class="{{content_prefix}}row row  is--gutter  is--wrap  {{content_mod}}">
-		<div class="{{content_prefix}}cols cols  {{content_mod}}  is--grid-3">	
-			[[azbntple 
-				tpl="/src/block/site/default/card/card-media.html"
-				block_prefix="card-item__" 
-				block_mod="is--services"
-				block_preview="http://via.placeholder.com/500x310"
-				block_heading="Карточка"
-				block_link="{{page.services_card}}"
-			]]
-		</div>
-		<div class="{{content_prefix}}cols cols  {{content_mod}}  is--grid-3">
-			[[azbntple 
-				tpl="/src/block/site/default/card/card-media.html"
-				block_prefix="card-item__" 
-				block_mod="is--services"
-				block_preview="http://via.placeholder.com/500x310"
-				block_heading="Карточка"
-				block_link="{{page.services_card}}"
-			]]
-		</div>
-		<div class="{{content_prefix}}cols cols  {{content_mod}}  is--grid-3">	
-			[[azbntple 
-				tpl="/src/block/site/default/card/card-media.html"
-				block_prefix="card-item__" 
-				block_mod="is--services"
-				block_preview="http://via.placeholder.com/500x310"
-				block_heading="Карточка"
-				block_link="{{page.services_card}}"
-			]]
-		</div>
-		<div class="{{content_prefix}}cols cols  {{content_mod}}  is--grid-3">	
-			[[azbntple 
-				tpl="/src/block/site/default/card/card-media.html"
-				block_prefix="card-item__" 
-				block_mod="is--services"
-				block_preview="http://via.placeholder.com/500x310"
-				block_heading="Карточка"
-				block_link="{{page.services_card}}"
-			]]
-		</div>
-		<div class="{{content_prefix}}cols cols  {{content_mod}}  is--grid-3">	
-			[[azbntple 
-				tpl="/src/block/site/default/card/card-media.html"
-				block_prefix="card-item__" 
-				block_mod="is--services"
-				block_preview="http://via.placeholder.com/500x310"
-				block_heading="Карточка"
-				block_link="{{page.services_card}}"
-			]]
-		</div>
-		<div class="{{content_prefix}}cols cols  {{content_mod}}  is--grid-3">	
-			[[azbntple 
-				tpl="/src/block/site/default/card/card-media.html"
-				block_prefix="card-item__" 
-				block_mod="is--services"
-				block_preview="http://via.placeholder.com/500x310"
-				block_heading="Карточка"
-				block_link="{{page.services_card}}"
-			]]
-		</div>
-	</div>
+	[[azbntple 
+		tpl="/src/block/site/default/header/panel-services.html"
+		block_prefix="header-block__"
+		block_mod="is--second"
+	]]
 </div>
 <div style="margin-bottom: 100px;">
-	<h5 class="{{block_prefix}}heading">Карточки портфолио</h5>
+	<h5 class="{{block_prefix}}heading">Карточки объектов</h5>
 	<div class="{{content_prefix}}row row  is--gutter  is--wrap  {{content_mod}}">
-		<div class="{{content_prefix}}cols cols  {{content_mod}}  is--grid-4">
+		<div class="{{content_prefix}}cols cols  {{content_mod}}  is--grid-2">
 			[[azbntple 
-				tpl="/src/block/site/default/card/card-media.html"
+				tpl="/src/block/site/default/card/card-objacts.html"
 				block_prefix="card-item__" 
-				block_mod="is--portfolio"
-				block_link="{{page.portfolio_card}}"
-				block_preview="http://via.placeholder.com/400x540"
-				block_heading="Карточка"
+				block_mod="is--objacts"
+				block_link="{{page.objacts}}"
+				block_preview="{{url-path-img}}/temp/objacts-card-item1.jpg"
+				block_heading="МКОУ «Бутиковская СОШ»"
+				block_heading_small="Монтаж вент. фасада из керамогранита"
 			]]
 		</div>
-		<div class="{{content_prefix}}cols cols  {{content_mod}}  is--grid-4">
+		<div class="{{content_prefix}}cols cols  {{content_mod}}  is--grid-2">
 			[[azbntple 
-				tpl="/src/block/site/default/card/card-media.html"
+				tpl="/src/block/site/default/card/card-objacts.html"
 				block_prefix="card-item__" 
-				block_mod="is--portfolio"
-				block_link="{{page.portfolio_card}}"
-				block_preview="http://via.placeholder.com/400x540"
-				block_heading="Карточка"
-			]]
-		</div>
-		<div class="{{content_prefix}}cols cols  {{content_mod}}  is--grid-4">
-			[[azbntple 
-				tpl="/src/block/site/default/card/card-media.html"
-				block_prefix="card-item__" 
-				block_mod="is--portfolio"
-				block_link="{{page.portfolio_card}}"
-				block_preview="http://via.placeholder.com/400x540"
-				block_heading="Карточка"
-			]]
-		</div>
-		<div class="{{content_prefix}}cols cols  {{content_mod}}  is--grid-4">
-			[[azbntple 
-				tpl="/src/block/site/default/card/card-media.html"
-				block_prefix="card-item__" 
-				block_mod="is--portfolio"
-				block_link="{{page.portfolio_card}}"
-				block_preview="http://via.placeholder.com/400x540"
-				block_heading="Карточка"
+				block_mod="is--objacts"
+				block_link="{{page.objacts}}"
+				block_preview="{{url-path-img}}/temp/objacts-card-item1.jpg"
+				block_heading="МКОУ «Бутиковская СОШ»"
+				block_heading_small="Монтаж вент. фасада из керамогранита"
 			]]
 		</div>
 	</div>
@@ -165,107 +90,42 @@
 	</div>
 </div>
 <div style="margin-bottom: 100px;">
-	<h5 class="{{block_prefix}}heading">Карточки новостей</h5>
-	<div class="{{content_prefix}}row row  is--gutter  is--gap-lg  is--wrap  {{content_mod}}">
-		<div class="{{content_prefix}}cols cols  {{content_mod}}  is--grid-3">
-			[[azbntple 
-				tpl="/src/block/site/default/card/card-news.html"
-				block_prefix="card-item__" 
-				block_mod="is--news"
-				block_preview="http://via.placeholder.com/500x265"
-				block_heading="Остекляем балкон и лоджию"
-				block_date="27.03.2018"
-				block_date_iso="2018-03-27"
-				block_note="Остекление лоджии или балкона – один из этапов максимально комфортной жизни в квартире. "
-			]]
-		</div>
-		<div class="{{content_prefix}}cols cols  {{content_mod}}  is--grid-3">
-			[[azbntple 
-				tpl="/src/block/site/default/card/card-news.html"
-				block_prefix="card-item__" 
-				block_mod="is--news"
-				block_preview="http://via.placeholder.com/500x265"
-				block_heading="Остекляем балкон и лоджию"
-				block_date="27.03.2018"
-				block_date_iso="2018-03-27"
-				block_note="Остекление лоджии или балкона – один из этапов максимально комфортной жизни в квартире. "
-			]]
-		</div>
-		<div class="{{content_prefix}}cols cols  {{content_mod}}  is--grid-3">
-			[[azbntple 
-				tpl="/src/block/site/default/card/card-news.html"
-				block_prefix="card-item__" 
-				block_mod="is--news"
-				block_preview="http://via.placeholder.com/500x265"
-				block_heading="Остекляем балкон и лоджию"
-				block_date="27.03.2018"
-				block_date_iso="2018-03-27"
-				block_note="Остекление лоджии или балкона – один из этапов максимально комфортной жизни в квартире. "
-			]]
-		</div>
-		<div class="{{content_prefix}}cols cols  {{content_mod}}  is--grid-3">
-			[[azbntple 
-				tpl="/src/block/site/default/card/card-news.html"
-				block_prefix="card-item__" 
-				block_mod="is--news"
-				block_preview="http://via.placeholder.com/500x265"
-				block_heading="Остекляем балкон и лоджию"
-				block_date="27.03.2018"
-				block_date_iso="2018-03-27"
-				block_note="Остекление лоджии или балкона – один из этапов максимально комфортной жизни в квартире. "
-			]]
-		</div>
-		<div class="{{content_prefix}}cols cols  {{content_mod}}  is--grid-3">
-			[[azbntple 
-				tpl="/src/block/site/default/card/card-news.html"
-				block_prefix="card-item__" 
-				block_mod="is--news"
-				block_preview="http://via.placeholder.com/500x265"
-				block_heading="Остекляем балкон и лоджию"
-				block_date="27.03.2018"
-				block_date_iso="2018-03-27"
-				block_note="Остекление лоджии или балкона – один из этапов максимально комфортной жизни в квартире. "
-			]]
-		</div>
-		<div class="{{content_prefix}}cols cols  {{content_mod}}  is--grid-3">
-			[[azbntple 
-				tpl="/src/block/site/default/card/card-news.html"
-				block_prefix="card-item__" 
-				block_mod="is--news"
-				block_preview="http://via.placeholder.com/500x265"
-				block_heading="Остекляем балкон и лоджию"
-				block_date="27.03.2018"
-				block_date_iso="2018-03-27"
-				block_note="Остекление лоджии или балкона – один из этапов максимально комфортной жизни в квартире. "
-			]]
-		</div>
-	</div>
-</div>
-<div style="margin-bottom: 100px;  max-width: 1015px;">
 	<h5 class="{{block_prefix}}heading">Карточки отзывов</h5>
-	<div class="{{content_prefix}}row row  is--gutter  is--gap-lg  is--wrap  {{content_mod}}">
-		<div class="{{content_prefix}}cols cols  {{content_mod}}  is--grid-1">
+	<div class="{{content_prefix}}row row  is--gutter  is--gutter-lg  {{content_mod}}">
+		<div class="{{content_prefix}}cols cols  {{content_mod}}  is--grid-3">
 			[[azbntple 
 				tpl="/src/block/site/default/card/card-reviews.html"
 				block_prefix="card-item__" 
 				block_mod="is--reviews"
-				block_preview="http://via.placeholder.com/500x265"
-				block_heading="Кирилл Афанасьев"
-				block_date="20 сентября 2018г"
-				block_date_iso="2018-03-27"
-				block_note="«Не так давно получили квартиру и обратились в ОкнаStory с тем, чтобы они выполнили установку пвх окон в нашем новом доме. Инженер, который делал замеры, дал немало дельных советов по выбору материалов и фурнитуры. Мы решили прислушаться, и не ошиблись. Довольно быстро заказ был исполнен и за два дня нам застеклили всю квартиру, дав на прощание советы по грамотной эксплуатации окон. В целом мы довольны и сроками и ценой, тем более что получили 10% скидку, что в нашем положении вылилось в приличную сумму. Спасибо за профессиональную работу и неравнодушное отношение»."
+				block_preview="http://via.placeholder.com/280x400"
+				block_preview_fancy="{{url-path-img}}/temp/certificates-card-fancy-item1.jpg"
+				block_fancy="reviews"
+				block_heading="МБОУ «Центр образования № 31 имени Романа Петровича Стащенка»"
+				block_note="МБОУ «Центр образования № 31 имени Романа Петровича Стащенка» выражает благодарность за высокий уровень профессионализма, неизменную позитивную поддержку и добголетнее плодотворное сотрудничество."
 			]]
 		</div>
-		<div class="{{content_prefix}}cols cols  {{content_mod}}  is--grid-1">
+		<div class="{{content_prefix}}cols cols  {{content_mod}}  is--grid-3">
 			[[azbntple 
 				tpl="/src/block/site/default/card/card-reviews.html"
 				block_prefix="card-item__" 
 				block_mod="is--reviews"
-				block_preview="http://via.placeholder.com/500x265"
-				block_heading="Кирилл Афанасьев"
-				block_date="20 сентября 2018г"
-				block_date_iso="2018-03-27"
-				block_note="«Не так давно получили квартиру и обратились в ОкнаStory с тем, чтобы они выполнили установку пвх окон в нашем новом доме. Инженер, который делал замеры, дал немало дельных советов по выбору материалов и фурнитуры. Мы решили прислушаться, и не ошиблись. Довольно быстро заказ был исполнен и за два дня нам застеклили всю квартиру, дав на прощание советы по грамотной эксплуатации окон. В целом мы довольны и сроками и ценой, тем более что получили 10% скидку, что в нашем положении вылилось в приличную сумму. Спасибо за профессиональную работу и неравнодушное отношение»."
+				block_preview="http://via.placeholder.com/280x400"
+				block_preview_fancy="{{url-path-img}}/temp/certificates-card-fancy-item1.jpg"
+				block_fancy="reviews"
+				block_heading="МБОУ «Центр образования № 31 имени Романа Петровича Стащенка»"
+				block_note="МБОУ «Центр образования № 31 имени Романа Петровича Стащенка» выражает благодарность за высокий уровень профессионализма, неизменную позитивную поддержку и добголетнее плодотворное сотрудничество."
+			]]
+		</div>
+		<div class="{{content_prefix}}cols cols  {{content_mod}}  is--grid-3">
+			[[azbntple 
+				tpl="/src/block/site/default/card/card-reviews.html"
+				block_prefix="card-item__" 
+				block_mod="is--reviews"
+				block_preview="http://via.placeholder.com/280x400"
+				block_preview_fancy="{{url-path-img}}/temp/certificates-card-fancy-item1.jpg"
+				block_fancy="reviews"
+				block_heading="МБОУ «Центр образования № 31 имени Романа Петровича Стащенка»"
+				block_note="МБОУ «Центр образования № 31 имени Романа Петровича Стащенка» выражает благодарность за высокий уровень профессионализма, неизменную позитивную поддержку и добголетнее плодотворное сотрудничество."
 			]]
 		</div>
 	</div>

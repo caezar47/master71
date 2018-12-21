@@ -2,7 +2,7 @@
 
 var CMS__TPL_PATH = '/wp-content/themes/azbn7theme';
 //var CMS__TPL_PATH = '';
-var Azbn7__API__Request = function(data, cb) {
+/*var Azbn7__API__Request = function(data, cb) {
 	
 	var ctrl = this;
 	
@@ -62,7 +62,7 @@ $(function(){
 			});				
 		}			
 	});
-});
+});*/
 /*
  * Inline Form Validation Engine 2.6.2, jQuery plugin
  *
