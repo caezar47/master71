@@ -122,6 +122,19 @@
 		&.is--gallery{
 			.card-hover(@trf-ty-b: 110%; @trf-ty-a: 110%;);
 		}
+		&.is--objacts{
+			height: 250px;
+			@media @media-point-notsmart {
+				min-height: 290px;
+				height: 22vw;
+				max-height: 390px;
+			}
+			img{
+				object-fit: cover;
+				width: 100%;
+				height: 100%;
+			}
+		}
 	}
 	&heading-group{
 		&.is--objacts{

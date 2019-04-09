@@ -488,6 +488,36 @@
 		color: @btn_color; 	
 	}
 }
+.color-panel__{
+	&bg{
+		width: 100px;
+		height: 100px;
+		margin-bottom: 10px;
+		border: 1px solid;
+		border-radius: 50%;
+	}
+	&heading{
+		font-size: @b-fs - 4;
+		line-height: @b-lh - 4;
+	}
+}
+.color{
+	&--black 			{color: @black}
+	&--white 			{color: @white}
+	&--default 			{color: @default}
+	&--success 			{color: @success}
+	&--danger 			{color: @danger}
+	&--red-d8 			{color: @red-d8}
+	&--green-49 		{color: @green-49}
+
+	&--bg-black 		{background-color: @black}
+	&--bg-white 		{background-color: @white}
+	&--bg-default 		{background-color: @default}
+	&--bg-success 		{background-color: @success}
+	&--bg-danger 		{background-color: @danger}
+	&--bg-red-d8 		{background-color: @red-d8}
+	&--bg-green-49 		{background-color: @green-49}
+}
 .card-item__{
 	&card{
 		position: relative;
@@ -611,6 +641,19 @@
 		}
 		&.is--gallery{
 			.card-hover(@trf-ty-b: 110%; @trf-ty-a: 110%;);
+		}
+		&.is--objacts{
+			height: 250px;
+			@media @media-point-notsmart {
+				min-height: 290px;
+				height: 22vw;
+				max-height: 390px;
+			}
+			img{
+				object-fit: cover;
+				width: 100%;
+				height: 100%;
+			}
 		}
 	}
 	&heading-group{
@@ -760,36 +803,6 @@
 	&elem-group{}
 	&elem{}
 	&elem-icon{}
-}
-.color-panel__{
-	&bg{
-		width: 100px;
-		height: 100px;
-		margin-bottom: 10px;
-		border: 1px solid;
-		border-radius: 50%;
-	}
-	&heading{
-		font-size: @b-fs - 4;
-		line-height: @b-lh - 4;
-	}
-}
-.color{
-	&--black 			{color: @black}
-	&--white 			{color: @white}
-	&--default 			{color: @default}
-	&--success 			{color: @success}
-	&--danger 			{color: @danger}
-	&--red-d8 			{color: @red-d8}
-	&--green-49 		{color: @green-49}
-
-	&--bg-black 		{background-color: @black}
-	&--bg-white 		{background-color: @white}
-	&--bg-default 		{background-color: @default}
-	&--bg-success 		{background-color: @success}
-	&--bg-danger 		{background-color: @danger}
-	&--bg-red-d8 		{background-color: @red-d8}
-	&--bg-green-49 		{background-color: @green-49}
 }
 .continfo__{
 	&block{}
